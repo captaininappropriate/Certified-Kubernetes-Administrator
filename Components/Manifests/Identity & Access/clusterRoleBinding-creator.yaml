@@ -1,0 +1,24 @@
+# used with nginx-deployment.yaml (Manifests/Core Workloads)
+# relies on clusterRole-creator.yaml (kubectl apply -f clusterRole-creator.yaml)
+# kubectl apply -f clusterRoleBinging-creator.yaml
+# kubectl get clusterrolebindings|grep creator
+# kubectl apply -f nginx-deployment.yaml
+# kubectl describe pod nginx-deployment-7c65467967-8s526 | grep -i 'service account'
+# kubectl delete -f nginx-deployment.yaml
+# kubectl delete -f clusterRoleBinding-creator.yaml
+# kubectl delete -f clusterRole-creator.yaml
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: write-pod-default
+  namespace: default
+subjects:
+- kind: ServiceAccount
+  name: creator
+  apiGroup: ""
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: writer
+  apiGroup: rbac.authorization.k8s.io

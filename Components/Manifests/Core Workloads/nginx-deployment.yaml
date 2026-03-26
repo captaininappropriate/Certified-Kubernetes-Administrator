@@ -1,0 +1,35 @@
+# requires clusterRole-Creator.yaml (Manifests/Identity & Access)
+# kubectl apply -f nginx-deployment.yaml
+# kubectl get deployment
+# kubectl describe deployment nginx-deployment
+# kubectl get pods
+# manual scale deployment by adjusting replicas and re-apply (kubectl apply -f nginx-deployment.yaml)
+# kubectl describe pod nginx-deployment-7c65467967-9zfn4 | grep -i ip | awk '{print $2}' | grep -v P | sort -u | uniq
+# curl http://<pod IP>
+# kubectl delete -f nginx-deployment.yaml
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginxdeployment
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: nginxdeployment
+    spec:
+      serviceAccountName: creator
+      containers:
+      - name: nginxdeployment
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
+
+
+  

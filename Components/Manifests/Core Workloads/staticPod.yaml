@@ -1,0 +1,18 @@
+# example of a simple pod
+# kubectl apply -f simplePod.yaml
+# kubectl get pods
+# kubectl describe pod web-server
+# kubectl delete -f simplePod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-server
+spec:
+  containers:
+    - name: websrv01
+      image: nginx:latest
+      ports:
+        - name: web
+          containerPort: 80
+          protocol: TCP

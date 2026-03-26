@@ -1,0 +1,12 @@
+# used with nginx-deployment.yaml (Manifests/Core Workloads)
+# kubectl create serviceaccount creator
+# kubectl get serviceaccount creator
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: creator
+rules:
+- apiGroups: [""]
+  resources: ["pods", "deployments"]
+  verbs: ["get", "list", "update", "create"]
