@@ -13,6 +13,8 @@ This repository contains content related to study preperation for the CKA exam.
         - Kube proxy
 
 - Installation
+    - Control Plane
+    - Worker Node
 
 - Manifests
     - Pods
