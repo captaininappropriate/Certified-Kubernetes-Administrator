@@ -4,3 +4,4 @@ API Server
 Scheduler
 ETCd
 Controller Manager
+cloud-controller-manager (optional)
