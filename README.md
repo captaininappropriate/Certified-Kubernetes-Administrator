@@ -61,7 +61,5 @@ This repository contains content related to study preperation for the CKA exam.
     - Extensibility
         - CustomResourceDefinition (CRD)
 
-- Backup, Restore, & Upgrade
-
 
 

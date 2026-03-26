@@ -140,3 +140,5 @@ sudo apt install -y kubelet kubeadm kubectl
 kubeadm version
 kubectl version --client
 ```
+
+Using the details provided during the control plane installation join the woker node to the cluster
