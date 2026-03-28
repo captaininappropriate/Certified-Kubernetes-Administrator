@@ -2,7 +2,7 @@
 
 This repository contains content related to study preperation for the CKA exam.
 
-- Components
+- 1. Control Plane and Worker Node
     - Control Plane
         - API Server
         - Scheduler
@@ -11,12 +11,12 @@ This repository contains content related to study preperation for the CKA exam.
     - Worker Node
         - Kubelet
         - Kube proxy
-
-- Installation
+    
+- 2. Installation
     - Control Plane
     - Worker Node
 
-- Manifests
+- 3. Manifests
     - Core Workloads
         - Pod
         - Deployment
@@ -60,6 +60,7 @@ This repository contains content related to study preperation for the CKA exam.
         - Lease
     - Extensibility
         - CustomResourceDefinition (CRD)
-
+        
+- 4. Backup Restore and Upgrade
 
 
