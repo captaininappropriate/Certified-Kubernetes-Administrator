@@ -1,6 +1,6 @@
 # High level summary of the Worker Node components
 
-## Control Plane
+1. Control Plane
 Manage the overall state of the cluster:
 
 - kube-apiserver : The core component server that exposes the Kubernetes HTTP API
@@ -9,7 +9,7 @@ Manage the overall state of the cluster:
 - kube-controller-manager : Runs controllers to implement Kubernetes API behavior
 - cloud-controller-manager (optional) : Integrates with underlying cloud provider(s)
 
-## Worker Node
+2. Worker Node
 Run on every node, maintaining running pods and providing the Kubernetes runtime environment:
 
 - kubelet : Ensures that Pods are running, including their containers

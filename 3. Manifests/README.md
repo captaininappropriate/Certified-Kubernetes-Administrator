@@ -1,27 +1,27 @@
 # A collection of manifests for the different type of objects within a Kubernetes environment
 
-- Core Workloads
+1. Core Workloads
     - Pod
     - Deployment
     - DaemonSet
     - StatefulSet
     - ReplicaSet
 
-- Networking
+2. Networking
     - Service
     - Ingress
     - NetworkPolicy
     - EndpointSlice
     - Endpoints
 
-- Identity & Access
+3. Identity & Access
     - ServiceAccount
     - Role
     - RoleBinding
     - ClusterRole
     - ClusterRoleBinding
 
-- Configuration & Storage
+4. Configuration & Storage
     - ConfigMap
     - Secret
     - PersistentVolume (PV)
@@ -29,26 +29,26 @@
     - StorageClass
     - VolumeAttachment
 
-- Cluster Administration
+5. Cluster Administration
     - Namespace
     - Node
     - ResourceQuota
     - LimitRange
     - PriorityClass
 
-- Autoscaling & Scheduling
+6. Autoscaling & Scheduling
     - HorizontalPodAutoscaler (HPA)
     - PodDisruptionBudget (PDB)
     - RuntimeClass
 
-- Policy & Security Controls
+7. Policy & Security Controls
     - PodSecurityPolicy (deprecated but may still exist in older clusters)
     - PodSecurityAdmission
 
-- Events & Metadata
+8. Events & Metadata
     - Event
     - Lease
 
-- Extensibility
+9. Extensibility
     - CustomResourceDefinition (CRD)
 

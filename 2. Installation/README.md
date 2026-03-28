@@ -1,8 +1,8 @@
 # Step by step installation of both the Kubernetes control plane and worker node
 
-## Control Plane
+1. Control Plane
 
-### Installation
+- Installation
 
 ```
 #!/bin/bash
@@ -61,7 +61,7 @@ kubectl version --client
 Follow the directions output to the terminal once the installation is complete
 
 
-### Configuration
+- Configuration
 
 ```
 #!/bin/bash
@@ -85,9 +85,8 @@ sudo kubeadm init --cri-socket=unix:///run/containerd/containerd.sock --control-
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s-1.11.yaml
 ```
 
-## Worker Node
-
-### Installation
+2. Worker Node
+- Installation
 
 ```
 #!/bin/bash
