@@ -1,4 +1,7 @@
 # Process to backup and upgrade Kubernetes
 
-Backup
-Upgrade
+1. Backup
+
+2. Restore
+
+3. Upgrade
